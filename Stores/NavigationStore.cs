@@ -1,7 +1,4 @@
-﻿using BetterNavigationServices.Core;
-using System;
-
-namespace BetterNavigationServices.Stores;
+﻿namespace BetterNavigationServices.Stores;
 
 public class NavigationStore
 {

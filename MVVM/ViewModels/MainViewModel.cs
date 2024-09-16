@@ -1,5 +1,4 @@
-﻿using BetterNavigationServices.Core;
-using BetterNavigationServices.Services;
+﻿using BetterNavigationServices.Services;
 using BetterNavigationServices.Stores;
 
 namespace BetterNavigationServices.MVVM.ViewModels;

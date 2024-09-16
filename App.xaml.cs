@@ -1,5 +1,4 @@
-﻿using BetterNavigationServices.MVVM.ViewModesl;
-using BetterNavigationServices.Services;
+﻿using BetterNavigationServices.Services;
 using BetterNavigationServices.Stores;
 using System.Windows;
 

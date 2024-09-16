@@ -1,6 +1,4 @@
-﻿using BetterNavigationServices.Core;
-
-namespace BetterNavigationServices.Commands;
+﻿namespace BetterNavigationServices.Commands;
 
 public class MoveToLoginViewCommand : RelayCommand
 {
