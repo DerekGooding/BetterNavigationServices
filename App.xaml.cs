@@ -23,7 +23,6 @@ namespace BetterNavigationServices
 
         protected override void OnStartup(StartupEventArgs e)
         {
-
             var homeNavigationService = _navigationServicesFactory.CreateHomeNavigationService();
             homeNavigationService.Navigate();
 

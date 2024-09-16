@@ -4,7 +4,6 @@ namespace BetterNavigationServices.Stores
 {
     public class AccountStore
     {
-
 		private Account _currentAccount;
 		public Account CurrentAccount
 		{

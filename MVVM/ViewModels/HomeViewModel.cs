@@ -13,7 +13,6 @@ namespace BetterNavigationServices.MVVM.ViewModesl
             var LoginViewModelNavigationService = navigationServicesFactory.CreateLoginNavigationService();
 
             LoginCommand =  new MoveToLoginViewCommand(LoginViewModelNavigationService);
-
         }
     }
 }

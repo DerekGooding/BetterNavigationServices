@@ -5,7 +5,6 @@ namespace BetterNavigationServices.Stores
 {
     public class NavigationStore
     {
-
 		public event Action CurrentViewModelChanged;
 
 		private ViewModelBase _currentViewModel;
