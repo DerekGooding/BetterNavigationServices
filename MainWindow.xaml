@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BetterNavigationServices"
         xmlns:views="clr-namespace:BetterNavigationServices.MVVM.Views"
-        xmlns:viewModel="clr-namespace:BetterNavigationServices.MVVM.ViewModesl"
+        xmlns:viewModel="clr-namespace:BetterNavigationServices.MVVM.ViewModels" 
+        d:DataContext="{d:DesignInstance Type=viewModel:MainViewModel}"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 

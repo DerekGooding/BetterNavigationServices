@@ -1,4 +1,5 @@
-﻿using BetterNavigationServices.Services;
+﻿using BetterNavigationServices.MVVM.ViewModels;
+using BetterNavigationServices.Services;
 using BetterNavigationServices.Stores;
 using System.Windows;
 
@@ -25,7 +26,7 @@ public partial class App : Application
         INavigationService homeNavigationService = _navigationServicesFactory.CreateHomeNavigationService();
         homeNavigationService.Navigate();
 
-        MainWindow mainWindow = new MainWindow()
+        MainWindow mainWindow = new()
         {
             DataContext = new MainViewModel(_navigationStore, _navigationServicesFactory)
         };

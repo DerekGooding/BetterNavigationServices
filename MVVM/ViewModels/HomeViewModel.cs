@@ -7,6 +7,7 @@ namespace BetterNavigationServices.MVVM.ViewModels;
 public class HomeViewModel : ViewModelBase
 {
     public ICommand LoginCommand { get; }
+
     public HomeViewModel(NavigationServicesFactory navigationServicesFactory)
     {
         INavigationService LoginViewModelNavigationService = navigationServicesFactory.CreateLoginNavigationService();

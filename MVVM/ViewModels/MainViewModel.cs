@@ -7,7 +7,7 @@ public class MainViewModel : ViewModelBase
 {
     private readonly NavigationStore _navigationStore;
     private readonly NavigationServicesFactory _navigationServicesFactory;
-    public ViewModelBase CurrentViewModel => _navigationStore.CurrentViiewModel;
+    public ViewModelBase? CurrentViewModel => _navigationStore.CurrentViiewModel;
 
     public MainViewModel(NavigationStore navigationStore, NavigationServicesFactory navigationServicesFactory)
     {
@@ -16,5 +16,5 @@ public class MainViewModel : ViewModelBase
         _navigationStore.CurrentViewModelChanged += OnCurrentViewModelChanged;
     }
 
-    private void OnCurrentViewModelChanged() => OnPropertyChanged(nameof(CurrentViewModel));
+    private void OnCurrentViewModelChanged() => NotifyPropertyChanged(nameof(CurrentViewModel));
 }

@@ -1,5 +1,3 @@
 ﻿namespace BetterNavigationServices.Commands;
 
-public class MoveToLoginViewCommand(INavigationService navigationService) : RelayCommand(() => navigationService.Navigate())
-{
-}
+public class MoveToLoginViewCommand(INavigationService navigationService) : RelayCommand(navigationService.Navigate);
