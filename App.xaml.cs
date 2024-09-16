@@ -1,12 +1,6 @@
 ﻿using BetterNavigationServices.MVVM.ViewModesl;
 using BetterNavigationServices.Services;
 using BetterNavigationServices.Stores;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace BetterNavigationServices

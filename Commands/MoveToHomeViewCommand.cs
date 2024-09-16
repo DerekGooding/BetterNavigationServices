@@ -1,7 +1,4 @@
-﻿using BetterNavigationServices.Commands;
-using BetterNavigationServices.Core;
-using BetterNavigationServices.Services;
-using System.Windows.Input;
+﻿using BetterNavigationServices.Core;
 
 namespace BetterNavigationServices.Commands
 {

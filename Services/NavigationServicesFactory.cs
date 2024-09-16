@@ -1,11 +1,6 @@
 ﻿using BetterNavigationServices.Core;
 using BetterNavigationServices.MVVM.ViewModesl;
 using BetterNavigationServices.Stores;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BetterNavigationServices.Services
 {
