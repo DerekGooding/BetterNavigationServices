@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace BetterNavigationServices.Commands;
+namespace BetterNavigationServices.Core;
 
 public class RelayCommand : ICommand
 {

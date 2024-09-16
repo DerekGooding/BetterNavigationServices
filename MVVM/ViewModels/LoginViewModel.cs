@@ -3,7 +3,7 @@ using BetterNavigationServices.Core;
 using BetterNavigationServices.Services;
 using System.Windows.Input;
 
-namespace BetterNavigationServices.MVVM.ViewModesl;
+namespace BetterNavigationServices.MVVM.ViewModels;
 
 public class LoginViewModel : ViewModelBase
 {

@@ -2,7 +2,7 @@
 using BetterNavigationServices.Services;
 using BetterNavigationServices.Stores;
 
-namespace BetterNavigationServices.MVVM.ViewModesl;
+namespace BetterNavigationServices.MVVM.ViewModels;
 
 public class MainViewModel : ViewModelBase
 {

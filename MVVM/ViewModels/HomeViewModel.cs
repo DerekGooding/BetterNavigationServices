@@ -3,7 +3,7 @@ using BetterNavigationServices.Core;
 using BetterNavigationServices.Services;
 using System.Windows.Input;
 
-namespace BetterNavigationServices.MVVM.ViewModesl;
+namespace BetterNavigationServices.MVVM.ViewModels;
 
 public class HomeViewModel : ViewModelBase
 {
@@ -12,6 +12,6 @@ public class HomeViewModel : ViewModelBase
     {
         var LoginViewModelNavigationService = navigationServicesFactory.CreateLoginNavigationService();
 
-        LoginCommand =  new MoveToLoginViewCommand(LoginViewModelNavigationService);
+        LoginCommand = new MoveToLoginViewCommand(LoginViewModelNavigationService);
     }
 }
