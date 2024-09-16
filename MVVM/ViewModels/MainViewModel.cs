@@ -2,24 +2,23 @@
 using BetterNavigationServices.Services;
 using BetterNavigationServices.Stores;
 
-namespace BetterNavigationServices.MVVM.ViewModesl
+namespace BetterNavigationServices.MVVM.ViewModesl;
+
+public class MainViewModel : ViewModelBase
 {
-    public class MainViewModel : ViewModelBase
+    private readonly NavigationStore _navigationStore;
+    private readonly NavigationServicesFactory _navigationServicesFactory;
+    public ViewModelBase CurrentViewModel => _navigationStore.CurrentViiewModel;
+
+    public MainViewModel(NavigationStore navigationStore, NavigationServicesFactory navigationServicesFactory)
     {
-        private readonly NavigationStore _navigationStore;
-        private readonly NavigationServicesFactory _navigationServicesFactory;
-        public ViewModelBase CurrentViewModel => _navigationStore.CurrentViiewModel;
+        _navigationServicesFactory = navigationServicesFactory;
+        _navigationStore = navigationStore;
+        _navigationStore.CurrentViewModelChanged += OnCurrentViewModelChanged;
+    }
 
-        public MainViewModel(NavigationStore navigationStore, NavigationServicesFactory navigationServicesFactory)
-        {
-            _navigationServicesFactory = navigationServicesFactory;
-            _navigationStore = navigationStore;
-            _navigationStore.CurrentViewModelChanged += OnCurrentViewModelChanged;
-        }
-
-        private void OnCurrentViewModelChanged()
-        {
-            OnPropertyChanged(nameof(CurrentViewModel));
-        }
+    private void OnCurrentViewModelChanged()
+    {
+        OnPropertyChanged(nameof(CurrentViewModel));
     }
 }

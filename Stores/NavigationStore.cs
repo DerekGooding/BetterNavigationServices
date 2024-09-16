@@ -1,10 +1,10 @@
 ﻿using BetterNavigationServices.Core;
 using System;
 
-namespace BetterNavigationServices.Stores
+namespace BetterNavigationServices.Stores;
+
+public class NavigationStore
 {
-    public class NavigationStore
-    {
 		public event Action CurrentViewModelChanged;
 
 		private ViewModelBase _currentViewModel;
@@ -17,13 +17,12 @@ namespace BetterNavigationServices.Stores
 			set
 			{
 				_currentViewModel = value;
-                OnCurrentViewModelChanged();
+            OnCurrentViewModelChanged();
 			}
 		}
 
-        private void OnCurrentViewModelChanged()
-        {
+    private void OnCurrentViewModelChanged()
+    {
 			CurrentViewModelChanged?.Invoke();
-        }
     }
 }

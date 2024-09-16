@@ -1,12 +1,11 @@
 ﻿using BetterNavigationServices.Core;
 
-namespace BetterNavigationServices.Commands
+namespace BetterNavigationServices.Commands;
+
+public class MoveToHomeViewCommand : RelayCommand
 {
-    public class MoveToHomeViewCommand : RelayCommand
+    public MoveToHomeViewCommand(INavigationService navigationService)
+        : base(() => navigationService.Navigate())
     {
-        public MoveToHomeViewCommand(INavigationService navigationService)
-            : base(() => navigationService.Navigate())
-        {
-        }
     }
 }

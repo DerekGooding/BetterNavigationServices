@@ -1,7 +1,6 @@
-﻿namespace BetterNavigationServices.Core
+﻿namespace BetterNavigationServices.Core;
+
+public class ViewModelBase : Observable
 {
-    public class ViewModelBase : Observable
-    {
-        public virtual void Dispose() { }
-    }
+    public virtual void Dispose() { }
 }

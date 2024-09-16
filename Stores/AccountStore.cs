@@ -1,9 +1,9 @@
 ﻿using BetterNavigationServices.MVVM.Models;
 
-namespace BetterNavigationServices.Stores
+namespace BetterNavigationServices.Stores;
+
+public class AccountStore
 {
-    public class AccountStore
-    {
 		private Account _currentAccount;
 		public Account CurrentAccount
 		{
@@ -16,4 +16,3 @@ namespace BetterNavigationServices.Stores
 
 		public bool IsLoggedIn => _currentAccount != null;
 	}
-}

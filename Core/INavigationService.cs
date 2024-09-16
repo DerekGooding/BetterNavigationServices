@@ -1,7 +1,6 @@
-﻿namespace BetterNavigationServices.Core
+﻿namespace BetterNavigationServices.Core;
+
+public interface INavigationService
 {
-    public interface INavigationService
-    {
-        void Navigate();
-    }
+    void Navigate();
 }

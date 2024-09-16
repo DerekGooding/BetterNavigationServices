@@ -1,12 +1,11 @@
 ﻿using BetterNavigationServices.Core;
 
-namespace BetterNavigationServices.Commands
+namespace BetterNavigationServices.Commands;
+
+public class MoveToLoginViewCommand : RelayCommand
 {
-    public class MoveToLoginViewCommand : RelayCommand
+    public MoveToLoginViewCommand(INavigationService navigationService)
+        : base(() => navigationService.Navigate())
     {
-        public MoveToLoginViewCommand(INavigationService navigationService)
-            : base(() => navigationService.Navigate())
-        {
-        }
     }
 }

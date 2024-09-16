@@ -1,15 +1,14 @@
 ﻿using System.Windows.Controls;
 
-namespace BetterNavigationServices.MVVM.Views
+namespace BetterNavigationServices.MVVM.Views;
+
+/// <summary>
+/// Interaction logic for HomeView.xaml
+/// </summary>
+public partial class HomeView : UserControl
 {
-    /// <summary>
-    /// Interaction logic for HomeView.xaml
-    /// </summary>
-    public partial class HomeView : UserControl
+    public HomeView()
     {
-        public HomeView()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }
