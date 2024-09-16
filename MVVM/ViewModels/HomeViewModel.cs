@@ -9,7 +9,7 @@ public class HomeViewModel : ViewModelBase
     public ICommand LoginCommand { get; }
     public HomeViewModel(NavigationServicesFactory navigationServicesFactory)
     {
-        var LoginViewModelNavigationService = navigationServicesFactory.CreateLoginNavigationService();
+        INavigationService LoginViewModelNavigationService = navigationServicesFactory.CreateLoginNavigationService();
 
         LoginCommand = new MoveToLoginViewCommand(LoginViewModelNavigationService);
     }

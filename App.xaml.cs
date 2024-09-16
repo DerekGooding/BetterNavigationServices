@@ -22,7 +22,7 @@ public partial class App : Application
 
     protected override void OnStartup(StartupEventArgs e)
     {
-        var homeNavigationService = _navigationServicesFactory.CreateHomeNavigationService();
+        INavigationService homeNavigationService = _navigationServicesFactory.CreateHomeNavigationService();
         homeNavigationService.Navigate();
 
         MainWindow mainWindow = new MainWindow()

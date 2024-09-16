@@ -18,8 +18,5 @@ public class NavigationStore
 			}
 		}
 
-    private void OnCurrentViewModelChanged()
-    {
-			CurrentViewModelChanged?.Invoke();
-    }
+    private void OnCurrentViewModelChanged() => CurrentViewModelChanged?.Invoke();
 }

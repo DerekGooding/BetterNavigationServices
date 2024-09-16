@@ -4,15 +4,7 @@ namespace BetterNavigationServices.Stores;
 
 public class AccountStore
 {
-		private Account _currentAccount;
-		public Account CurrentAccount
-		{
-			get => _currentAccount;
-			set
-			{
-				Account _currentAccount = value;
-			}
-		}
+    public Account? CurrentAccount { get; set; }
 
-		public bool IsLoggedIn => _currentAccount != null;
-	}
+    public bool IsLoggedIn => CurrentAccount != null;
+}

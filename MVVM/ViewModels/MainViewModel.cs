@@ -16,8 +16,5 @@ public class MainViewModel : ViewModelBase
         _navigationStore.CurrentViewModelChanged += OnCurrentViewModelChanged;
     }
 
-    private void OnCurrentViewModelChanged()
-    {
-        OnPropertyChanged(nameof(CurrentViewModel));
-    }
+    private void OnCurrentViewModelChanged() => OnPropertyChanged(nameof(CurrentViewModel));
 }
